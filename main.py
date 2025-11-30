@@ -8,5 +8,6 @@ params = {
 def monitor():
     response = requests.get(produto, params=params)
     print(response.status_code)
+    print(response.text)
 
 monitor()
