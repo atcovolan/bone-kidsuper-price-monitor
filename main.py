@@ -38,6 +38,9 @@ def monitor():
             print("Segue preço antigo")
         else:
             print("Preço alterado, confirmar!")
-        time.sleep(3)
+            print("Enviando webhook e encerrando...")
+            enviar_webhook(produto)
+            break
+        time.sleep(5)
 
 monitor()
